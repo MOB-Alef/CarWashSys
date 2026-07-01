@@ -31,12 +31,32 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    # ===========================================
+    # Apps padrão do Django
+    # ===========================================
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # ===========================================
+    # Apps do CarWashSys
+    # Dia 1
+    # ===========================================
+
+    'apps.core',
+    'apps.accounts',
+    'apps.dashboard',
+    'apps.funcionarios',
+    'apps.clientes',
+    'apps.veiculos',
+    'apps.ordens',
+    'apps.estoque',
+    'apps.financeiro',
 ]
 
 MIDDLEWARE = [
