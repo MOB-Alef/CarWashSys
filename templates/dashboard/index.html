@@ -1,19 +1,85 @@
 {% extends 'base.html' %}
 
 {% block title %}
-CarWashSys
+Dashboard | CarWashSys
 {% endblock %}
 
 {% block content %}
 
-<h2>Bem-vindo ao CarWashSys 🚗</h2>
+<div class="container-fluid mt-4">
 
-<p>
-Sistema de gerenciamento para lavagem automotiva.
-</p>
+    <h2 class="mb-4">
+        Bem-vindo ao CarWashSys 🚗
+    </h2>
 
-<p>
-Projeto iniciado no Dia 0.
-</p>
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <div class="card shadow-sm mb-3">
+
+                <div class="card-body">
+
+                    <h5>👥 Clientes</h5>
+
+                    <h2>0</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow-sm mb-3">
+
+                <div class="card-body">
+
+                    <h5>🚘 Veículos</h5>
+
+                    <h2>0</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow-sm mb-3">
+
+                <div class="card-body">
+
+                    <h5>📋 Ordens</h5>
+
+                    <h2>0</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow-sm mb-3">
+
+                <div class="card-body">
+
+                    <h5>💰 Caixa</h5>
+
+                    <h2>R$ 0,00</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 {% endblock %}
