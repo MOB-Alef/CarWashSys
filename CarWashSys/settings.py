@@ -74,7 +74,7 @@ ROOT_URLCONF = 'CarWashSys.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,9 +122,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# ==========================================================
+# DIA 2
+# Configuração de idioma
+# ==========================================================
 
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'pt-br'
+
+TIME_ZONE = 'America/Manaus'
 
 USE_I18N = True
 
@@ -134,4 +139,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+# ==========================================================
+# DIA 2
+# Arquivos estáticos
+# ==========================================================
+
+STATIC_URL = "static/"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+# ==========================================================
+# DIA 2
+# Upload de arquivos
+# ==========================================================
+
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT = BASE_DIR / "media"
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
