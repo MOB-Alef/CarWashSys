@@ -61,3 +61,16 @@ Foram implementados:
 Pela primeira vez foi possível visualizar como será o sistema utilizado dentro da empresa.
 
 A fundação visual do CarWashSys está oficialmente criada.
+# 📅 Dia 7
+
+Data:
+07/07/2026
+
+Última alteração:
+15:35 (aproximadamente)
+
+Hoje o CarWashSys ganhou seu primeiro sistema completo de autenticação.
+
+Foi implementado o fluxo de login, logout e proteção das páginas administrativas. O Dashboard passou a exigir autenticação, consolidando a base de segurança do sistema.
+
+Também foi criado o Registro da Sessão, permitindo documentar imagens compartilhadas e o tempo aproximado dedicado ao desenvolvimento de cada dia.

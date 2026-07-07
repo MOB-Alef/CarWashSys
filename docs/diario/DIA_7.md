@@ -9,34 +9,36 @@
 ## Objetivos concluídos
 
 - Sistema de autenticação implementado.
-- Login personalizado criado.
-- Formulário de login estilizado.
-- Logout implementado utilizando POST.
-- Dashboard protegido por autenticação.
-- Usuário autenticado exibido na Navbar.
-- Fluxo de redirecionamento configurado.
+- Tela de login criada.
+- Formulário personalizado com Bootstrap.
+- Login utilizando AuthenticationForm.
+- Logout configurado utilizando método POST.
+- Dashboard protegido com LoginRequiredMixin.
+- Redirecionamento após autenticação configurado.
+- Exibição do usuário autenticado na Navbar.
+- Revisão geral da autenticação.
 
 ---
 
 ## Aprendizados
 
-Hoje o CarWashSys passou a controlar quem pode acessar o sistema.
+Hoje o CarWashSys passou a possuir controle de acesso funcional.
 
-A autenticação deixa de ser apenas uma funcionalidade e passa a ser a porta de entrada oficial do software.
+Foi o primeiro passo para transformar o sistema em um software empresarial, garantindo que apenas usuários autenticados possam acessar as áreas administrativas.
 
-Foi também um dia importante para compreender as boas práticas de segurança do Django, como o uso de CSRF e o logout por requisição POST.
+Também reforçamos nossa filosofia de revisar cada etapa antes de finalizar o dia.
 
 ---
 
-## Próxima missão (Dia 8)
+## Registro da Sessão
 
-- Criar o modelo de Funcionários.
-- Estruturar o cadastro de funcionários.
-- Integrar usuários aos funcionários.
-- Preparar o controle de permissões.
+🖼️ Imagens enviadas: 2
+
+⏱️ Tempo aproximado:
+4h 18min
 
 ---
 
 Frase do dia:
 
-"A segurança é a primeira porta de um sistema confiável. Hoje construímos essa porta para o CarWashSys."
+"Segurança também faz parte da organização. Um sistema confiável começa controlando quem pode acessá-lo."

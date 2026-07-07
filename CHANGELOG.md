@@ -56,8 +56,10 @@ Todas as alterações importantes do CarWashSys serão registradas neste arquivo
 ### Adicionado
 
 - Sistema de autenticação.
-- Login personalizado.
-- Logout seguro via POST.
+- Tela de login.
+- Formulário personalizado.
+- Logout via POST.
 - Proteção do Dashboard.
+- Redirecionamentos de login e logout.
 - Exibição do usuário autenticado.
-- Redirecionamento automático após login e logout.
+- Registro da Sessão na documentação.
