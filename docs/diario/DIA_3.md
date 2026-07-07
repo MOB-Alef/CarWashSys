@@ -32,7 +32,7 @@ O sistema começa a se parecer com o software que será utilizado futuramente na
 
 ---
 
-## Próxima missão (Dia 4)
+## Próxima missão (Dia 6)
 
 - Criar o sistema de autenticação.
 - Desenvolver a tela de login.
@@ -43,4 +43,4 @@ O sistema começa a se parecer com o software que será utilizado futuramente na
 
 Frase do dia:
 
-"Uma interface organizada transmite confiança. Hoje construímos não apenas telas, mas a identidade visual do CarWashSys."
+"Uma interface organizada transmite confiança. Hoje construímos não apenas telas, mas a identidade visual do CarWashSys." 

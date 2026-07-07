@@ -51,3 +51,13 @@ Todas as alterações importantes do CarWashSys serão registradas neste arquivo
 - Login
 - Controle de usuários
 - Permissões
+## Versão 0.2
+
+### Adicionado
+
+- Sistema de autenticação.
+- Login personalizado.
+- Logout seguro via POST.
+- Proteção do Dashboard.
+- Exibição do usuário autenticado.
+- Redirecionamento automático após login e logout.
