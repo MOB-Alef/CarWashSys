@@ -74,3 +74,11 @@ Hoje o CarWashSys ganhou seu primeiro sistema completo de autenticação.
 Foi implementado o fluxo de login, logout e proteção das páginas administrativas. O Dashboard passou a exigir autenticação, consolidando a base de segurança do sistema.
 
 Também foi criado o Registro da Sessão, permitindo documentar imagens compartilhadas e o tempo aproximado dedicado ao desenvolvimento de cada dia.
+
+# Dia 8
+
+Primeiro módulo funcional do CarWashSys concluído.
+
+Foi implementado o módulo Clientes contendo cadastro, listagem, integração com banco de dados e interface própria.
+
+Este foi o primeiro recurso completo desenvolvido fora do Django Admin, marcando a transição do projeto para um sistema próprio de gestão.

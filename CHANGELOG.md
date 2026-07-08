@@ -63,3 +63,20 @@ Todas as alterações importantes do CarWashSys serão registradas neste arquivo
 - Redirecionamentos de login e logout.
 - Exibição do usuário autenticado.
 - Registro da Sessão na documentação.
+## v0.0.8
+
+### Adicionado
+
+- Módulo Clientes
+- Model Cliente
+- ClienteForm
+- Listagem de clientes
+- Cadastro pela interface
+- Template de formulário
+- Integração com banco SQLite
+- Registro do modelo no Django Admin
+
+### Melhorias
+
+- Estrutura preparada para CRUD completo.
+- Navegação expandida para o módulo Clientes.
