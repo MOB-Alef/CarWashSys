@@ -80,3 +80,19 @@ Todas as alterações importantes do CarWashSys serão registradas neste arquivo
 
 - Estrutura preparada para CRUD completo.
 - Navegação expandida para o módulo Clientes.
+
+# v0.0.9
+
+## Adicionado
+
+- Exclusão de Clientes.
+- Relacionamento Cliente → Veículo.
+- Seleção de proprietário no cadastro de veículos.
+- Estrutura inicial de Ordens de Serviço.
+- CRUD inicial de Ordens.
+
+## Corrigido
+
+- Configuração do módulo Ordens.
+- URLs do aplicativo.
+- Organização da arquitetura.

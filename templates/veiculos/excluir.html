@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}
+Excluir Veículo
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="card shadow-sm">
+
+        <div class="card-header bg-danger text-white">
+
+            <h3>
+
+                Excluir Veículo
+
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <p>
+
+                Tem certeza que deseja excluir o veículo abaixo?
+
+            </p>
+
+            <ul class="list-group mb-4">
+
+                <li class="list-group-item">
+
+                    <strong>Cliente:</strong>
+
+                    {{ veiculo.cliente.nome }}
+
+                </li>
+
+                <li class="list-group-item">
+
+                    <strong>Marca:</strong>
+
+                    {{ veiculo.marca }}
+
+                </li>
+
+                <li class="list-group-item">
+
+                    <strong>Modelo:</strong>
+
+                    {{ veiculo.modelo }}
+
+                </li>
+
+                <li class="list-group-item">
+
+                    <strong>Placa:</strong>
+
+                    {{ veiculo.placa }}
+
+                </li>
+
+            </ul>
+
+            <form method="post">
+
+                {% csrf_token %}
+
+                <button
+                    type="submit"
+                    class="btn btn-danger">
+
+                    Excluir
+
+                </button>
+
+                <a
+                    href="{% url 'lista_veiculos' %}"
+                    class="btn btn-secondary">
+
+                    Cancelar
+
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

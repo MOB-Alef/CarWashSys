@@ -82,3 +82,15 @@ Primeiro módulo funcional do CarWashSys concluído.
 Foi implementado o módulo Clientes contendo cadastro, listagem, integração com banco de dados e interface própria.
 
 Este foi o primeiro recurso completo desenvolvido fora do Django Admin, marcando a transição do projeto para um sistema próprio de gestão.
+
+## Dia 9
+
+- CRUD de Clientes concluído.
+- Exclusão de clientes implementada.
+- Módulo Veículos recebeu relacionamento com Clientes.
+- Formulário de Veículos atualizado.
+- Listagem de veículos exibe proprietário.
+- Início do módulo Ordens de Serviço.
+- Estrutura completa do módulo criada.
+- Primeiro cadastro de Ordem realizado pela interface.
+- Correção da configuração de URLs do módulo Ordens.

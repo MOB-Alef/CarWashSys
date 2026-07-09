@@ -85,17 +85,21 @@ Clientes
 
                         <td class="text-center">
 
-                            <button class="btn btn-warning btn-sm">
+                            <a
+                                href="{% url 'editar_cliente' cliente.pk %}"
+                                class="btn btn-warning btn-sm">
 
-                                Editar
+                                 Editar
 
-                            </button>
+                            </a>
 
-                            <button class="btn btn-danger btn-sm">
+                            <a
+    href="{% url 'excluir_cliente' cliente.pk %}"
+    class="btn btn-danger btn-sm">
 
-                                Excluir
+    Excluir
 
-                            </button>
+</a>
 
                         </td>
 

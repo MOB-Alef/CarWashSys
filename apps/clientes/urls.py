@@ -16,4 +16,16 @@ urlpatterns = [
         name="novo_cliente",
     ),
 
+    path(
+        "<int:pk>/editar/",
+        views.editar_cliente,
+        name="editar_cliente",
+    ),
+
+    path(
+        "<int:pk>/excluir/",
+        views.excluir_cliente,
+        name="excluir_cliente",
+    ),
+
 ]

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}
+Ordem de Serviço
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="card shadow-sm">
+
+                <div class="card-header">
+
+                    <h3>
+
+                        Cadastro de Ordem de Serviço
+
+                    </h3>
+
+                </div>
+
+                <div class="card-body">
+
+                    <form method="post">
+
+                        {% csrf_token %}
+
+                        {{ form.as_p }}
+
+                        <button
+                            type="submit"
+                            class="btn btn-success">
+
+                            Salvar
+
+                        </button>
+
+                        <a
+                            href="{% url 'lista_ordens' %}"
+                            class="btn btn-secondary">
+
+                            Cancelar
+
+                        </a>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

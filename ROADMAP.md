@@ -1,26 +1,38 @@
-# Próximas etapas
+# ROADMAP
 
-## Dia 9
+## ✅ Concluído
 
-- Editar Cliente
-- Excluir Cliente
-- Página de detalhes
-- Pesquisa de clientes
-- Mensagens de sucesso
-- Paginação
+- Login
+- Dashboard
+- Clientes (CRUD)
+- Veículos (CRUD)
+- Relacionamento Cliente → Veículo
+- Estrutura inicial de Ordens
 
 ---
 
-## Próximos módulos
+## 🔄 Em andamento
 
-- Veículos
-- Ordens de Serviço
+- CRUD completo de Ordens
+
+---
+
+## ⏳ Próximos módulos
+
 - Estoque
 - Financeiro
 - Funcionários
 
 ---
 
-Meta atual
+## Futuro
 
-Transformar o módulo Clientes no primeiro CRUD completo do CarWashSys.
+- Pesquisa
+- Paginação
+- Upload de fotos
+- Histórico de Lavagens
+- Relatórios
+- Dashboard financeiro
+- Agenda
+- Permissões
+- API
