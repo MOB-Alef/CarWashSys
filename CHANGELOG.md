@@ -96,3 +96,29 @@ Todas as alterações importantes do CarWashSys serão registradas neste arquivo
 - Configuração do módulo Ordens.
 - URLs do aplicativo.
 - Organização da arquitetura.
+
+v0.4.0 — Estoque e Financeiro
+Adicionado
+Estoque
+CRUD completo
+formulário Bootstrap
+listagem
+exclusão
+edição
+integração ao projeto
+Financeiro
+CRUD completo
+modelo Movimentação
+Entrada
+Saída
+Data
+Valor
+Observações
+Templates
+URLs
+Views
+Melhorias
+padronização visual entre módulos;
+reaproveitamento da arquitetura CRUD;
+formatação de preços;
+organização dos templates.

@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}
+Produtos
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container-fluid">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2>
+            Produtos
+        </h2>
+
+
+        <a
+            href="{% url 'novo_produto' %}"
+            class="btn btn-primary">
+
+            + Novo Produto
+
+        </a>
+    </div>
+
+    <div class="mb-4">
+
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Pesquisar produto...">
+
+        </div>
+
+    <div class="card shadow-sm">
+
+        <div class="card-body">
+
+            <table class="table table-hover align-middle">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Unidade</th>
+                        <th>Preço</th>
+                        <th>Fornecedor</th>
+                        <th class="text-center">Ações</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    {% for produto in produtos %}
+
+                    <tr>
+
+                        <td>{{ produto.nome }}</td>
+                        <td>{{ produto.quantidade }}</td>
+                        <td>{{ produto.unidade }}</td>
+                        <td>R$ {{ produto.preco|floatformat:2 }}</td>
+                        <td>{{ produto.fornecedor }}</td>
+
+                        <td class="text-center">
+
+                            <a
+                                href="{% url 'editar_produto' produto.pk %}"
+                                class="btn btn-warning btn-sm">
+
+                                Editar
+
+                            </a>
+
+                            <a
+                                href="{% url 'excluir_produto' produto.pk %}"
+                                class="btn btn-danger btn-sm">
+
+                                Excluir
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    {% empty %}
+
+                    <tr>
+
+                        <td colspan="6" class="text-center text-muted">
+
+                            Nenhum produto cadastrado.
+
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
