@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}
+Funcionários
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="card shadow-sm">
+
+                <div class="card-header">
+
+                    <h3>
+
+                        Cadastro de Funcionário
+
+                    </h3>
+
+                </div>
+
+                <div class="card-body">
+
+                    <form method="post">
+
+                        {% csrf_token %}
+
+                        {{ form.as_p }}
+
+                        <button
+                            type="submit"
+                            class="btn btn-success">
+
+                            Salvar
+
+                        </button>
+
+                        <a
+                            href="{% url 'lista_funcionarios' %}"
+                            class="btn btn-secondary">
+
+                            Cancelar
+
+                        </a>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -36,4 +36,6 @@ urlpatterns = [
     path("estoque/",include("apps.estoque.urls"),),
 
     path("financeiro/",include("apps.financeiro.urls"),),
+
+    path("funcionarios/",include("apps.funcionarios.urls"),),
 ]

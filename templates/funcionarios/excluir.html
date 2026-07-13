@@ -1,0 +1,69 @@
+{%
+    block title
+%}
+    Excluir Funcionário
+{%
+    endblock
+%}
+
+{%
+    block content
+%}
+
+<div class="container-fluid">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-6">
+
+            <div class="card shadow-sm">
+
+                <div class="card-header">
+
+                    <h3>
+
+                        Excluir Funcionário
+
+                    </h3>
+
+                </div>
+
+                <div class="card-body">
+
+                    <p>
+
+                        Tem certeza que deseja excluir o funcionário "{{ funcionario.nome }}"?
+
+                    </p>
+
+                    <form method="post">
+
+                        {%
+                            csrf_token
+                        %}
+
+                        <button
+                            type="submit"
+                            class="btn btn-danger">
+
+                            Excluir
+
+                        </button>
+
+                        <a
+                            href="{% url 'lista_funcionarios' %}"
+                            class="btn btn-secondary">
+
+                            Cancelar
+
+                        </a>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
