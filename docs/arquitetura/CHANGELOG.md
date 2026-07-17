@@ -122,3 +122,13 @@ padronização visual entre módulos;
 reaproveitamento da arquitetura CRUD;
 formatação de preços;
 organização dos templates.
+
+## [18/07/2026]
+
+### Documentação
+
+- Reorganizado o diário de desenvolvimento em blocos de dez dias.
+- Criado o arquivo `DIA_01_A_10.md`.
+- Criado o arquivo `DIA_11_A_20.md`.
+- Revisada a documentação da arquitetura.
+- Padronizada a organização dos registros históricos do projeto.
