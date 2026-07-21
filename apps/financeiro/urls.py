@@ -7,7 +7,7 @@ urlpatterns = [
     path(
         "",
         views.lista_movimentacoes,
-        name="lista_movimentacoes",
+        name="lista_financeiro",
     ),
 
     path(

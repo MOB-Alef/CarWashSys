@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}
+Detalhes da Ordem
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="card shadow-sm">
+
+        <div class="card-header bg-primary text-white">
+
+            <h3>
+
+                🚗 Ordem de Serviço #{{ ordem.id }}
+
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-bordered">
+
+                    <tr>
+        <th>Funcionário</th>
+
+        <td>
+            {{ ordem.funcionario|default:"Não definido" }}
+        </td>
+    </tr>
+
+                <tr>
+                    <th>Cliente</th>
+                    <td>{{ ordem.cliente.nome }}</td>
+                </tr>
+
+                <tr>
+                    <th>Veículo</th>
+                    <td>{{ ordem.veiculo.modelo }} - {{ ordem.veiculo.placa }}</td>
+                </tr>
+
+                <tr>
+                    <th>Status</th>
+                    <td>{{ ordem.status }}</td>
+                </tr>
+
+                <tr>
+                    <th>Valor</th>
+                    <td>R$ {{ ordem.valor }}</td>
+                </tr>
+
+                <tr>
+                    <th>Forma de Pagamento</th>
+                    <td>{{ ordem.forma_pagamento|default:"Não informado" }}</td>
+                </tr>
+
+                <tr>
+                    <th>Data de Entrada</th>
+                    <td>{{ ordem.data_entrada }}</td>
+                </tr>
+
+                <tr>
+                    <th>Data de Saída</th>
+                    <td>{{ ordem.data_saida|default:"Ainda não finalizada" }}</td>
+                </tr>
+
+                <tr>
+                    <th>Observações</th>
+                    <td>{{ ordem.observacoes|default:"Nenhuma observação." }}</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="mt-4 d-flex gap-2">
+
+        <a
+            href="{% url 'lista_ordens' %}"
+            class="btn btn-secondary">
+
+            ← Voltar
+
+        </a>
+
+        <a
+            href="{% url 'editar_ordem' ordem.pk %}"
+            class="btn btn-warning">
+
+            ✏️ Editar
+
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

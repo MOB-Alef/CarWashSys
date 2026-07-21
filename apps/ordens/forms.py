@@ -17,6 +17,12 @@ class OrdemServicoForm(forms.ModelForm):
                 "class": "form-select",
             }),
 
+            "funcionario": forms.Select(
+    attrs={
+        "class": "form-select",
+    }
+),
+
             "veiculo": forms.Select(attrs={
                 "class": "form-select",
             }),

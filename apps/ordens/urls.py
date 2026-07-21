@@ -15,6 +15,12 @@ urlpatterns = [
         views.nova_ordem,
         name="nova_ordem",
     ),
+    
+    path(
+    "<int:pk>/",
+    views.detalhes_ordem,
+    name="detalhes_ordem",
+    ),
 
     path(
         "<int:pk>/editar/",

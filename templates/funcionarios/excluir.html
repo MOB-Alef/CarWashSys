@@ -1,14 +1,10 @@
-{%
-    block title
-%}
-    Excluir Funcionário
-{%
-    endblock
-%}
+{% extends "base.html" %}
 
-{%
-    block content
-%}
+{% block title %}
+Excluir Funcionário
+{% endblock %}
+
+{% block content %}
 
 <div class="container-fluid">
 
@@ -16,46 +12,30 @@
 
         <div class="col-lg-6">
 
-            <div class="card shadow-sm">
+            <div class="card shadow-sm border-danger">
 
-                <div class="card-header">
+                <div class="card-header bg-danger text-white">
 
-                    <h3>
-
-                        Excluir Funcionário
-
-                    </h3>
+                    <h3>Excluir Funcionário</h3>
 
                 </div>
 
                 <div class="card-body">
 
                     <p>
-
-                        Tem certeza que deseja excluir o funcionário "{{ funcionario.nome }}"?
-
+                        Tem certeza que deseja excluir o funcionário
+                        <strong>{{ funcionario.nome }}</strong>?
                     </p>
 
                     <form method="post">
+                        {% csrf_token %}
 
-                        {%
-                            csrf_token
-                        %}
-
-                        <button
-                            type="submit"
-                            class="btn btn-danger">
-
+                        <button type="submit" class="btn btn-danger">
                             Excluir
-
                         </button>
 
-                        <a
-                            href="{% url 'lista_funcionarios' %}"
-                            class="btn btn-secondary">
-
+                        <a href="{% url 'lista_funcionarios' %}" class="btn btn-secondary">
                             Cancelar
-
                         </a>
 
                     </form>
@@ -67,3 +47,7 @@
         </div>
 
     </div>
+
+</div>
+
+{% endblock %}

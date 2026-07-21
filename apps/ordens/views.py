@@ -105,3 +105,20 @@ def excluir_ordem(request, pk):
         "ordens/excluir.html",
         context,
     )
+
+def detalhes_ordem(request, pk):
+
+    ordem = get_object_or_404(
+        OrdemServico,
+        pk=pk,
+    )
+
+    context = {
+        "ordem": ordem,
+    }
+
+    return render(
+        request,
+        "ordens/detalhes.html",
+        context,
+    )
